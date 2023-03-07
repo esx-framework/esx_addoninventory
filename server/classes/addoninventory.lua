@@ -8,15 +8,17 @@ function CreateAddonInventory(name, owner, items)
 	function self.addItem(name, count)
 		local item = self.getItem(name)
 		item.count = item.count + count
-		Wait(100)
+
 		self.saveItem(name, item.count)
 	end
 
 	function self.removeItem(name, count)
-		local item = self.getItem(name)
-		item.count = item.count - count
-
-		self.saveItem(name, item.count)
+		if count > 0 then
+			local item = self.getItem(name)
+			item.count = item.count - count
+			
+			self.saveItem(name, item.count)
+		end
 	end
 
 	function self.setItem(name, count)
