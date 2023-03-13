@@ -4,7 +4,7 @@ game 'gta5'
 
 description 'ESX Addon Inventory'
 lua54 'yes'
-
+server_only 'yes'
 version '1.0' 
 legacyversion '1.9.1'
 
