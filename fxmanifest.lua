@@ -15,4 +15,9 @@ server_scripts {
 	'server/main.lua'
 }
 
+server_exports {
+    'GetSharedInventory',
+    'AddSharedInventory'
+}
+
 dependency 'es_extended'
