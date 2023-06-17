@@ -93,6 +93,7 @@ function GetSharedInventory(name)
 end
 
 function AddSharedInventory(society)
+    if type(society) ~= 'table' or not society?.name or not society?.label then return end
     -- society (array) containing name (string) and label (string)
 
     -- addon inventory:
