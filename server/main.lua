@@ -76,7 +76,7 @@ MySQL.ready(function()
 
 			local addonInventory    = CreateAddonInventory(name, nil, items)
 			SharedInventories[name] = addonInventory
-			GlobalState.AddonInventory.SharedInventories = SharedInventories
+			GlobalState.SharedInventories = SharedInventories
 		end
 	end
 end)
