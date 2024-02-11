@@ -2,7 +2,7 @@ fx_version 'adamant'
 
 game 'gta5'
 
-description 'ESX Addon Inventory'
+description 'Adds a way for resources to store items for players'
 lua54 'yes'
 
 version '1.0' 
